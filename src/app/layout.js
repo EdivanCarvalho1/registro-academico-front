@@ -1,4 +1,5 @@
 import "./globals.css";
+import BootstrapClient from "./matricula/components/bootstrap/BootstrapClient";
 
 
 export const metadata = {
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         {children}
+        <BootstrapClient />
       </body>
     </html>
   );
