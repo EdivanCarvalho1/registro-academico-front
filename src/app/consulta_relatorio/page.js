@@ -13,10 +13,10 @@ export default function Home(){
           <div className=''>
         <div className='flex justify-center items-center m-10'>
             <div className='m-3'>
-              <Consulta/>
+              <Consulta color="bg-amber-400"  />
             </div>
             <div>
-              <Relatorio/>
+              <Relatorio color="bg-amber-400"/>
             </div>
           </div>
         </div>

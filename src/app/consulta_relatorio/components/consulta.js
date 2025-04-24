@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function Consulta(){
+
+export default function Consulta({ color }){
   return (
     <div className='border rounded-2xl bg-slate-50 '>
-      <header className='bg-amber-400 rounded-2xl p-5 '>
+      <header className={`rounded-2xl p-5 ${color}`}>
       consulta
 
       </header>
