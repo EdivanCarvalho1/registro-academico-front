@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Consulta({ color }){
   return (
-    <div className='border rounded-2xl bg-slate-50 '>
+    <div className='border rounded-2xl bg-slate-50 m-5 '>
       <header className={`rounded-2xl p-5 ${color}`}>
       consulta
 

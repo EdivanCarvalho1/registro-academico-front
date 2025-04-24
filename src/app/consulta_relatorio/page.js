@@ -10,22 +10,27 @@ export default function Home(){
         <div className='flex justify-center items-center'>
           <h1>Registro Escolar</h1>
         </div>
-          <div className=''>
-        <div className='flex justify-center items-center m-10'>
-            <div className='m-3'>
+        <div className='flex flex-col m-10 justify-center items-center'>
+          
+            <div className='inline-flex m-5'>
               <Consulta color="bg-amber-400"  />
-            </div>
-            <div>
               <Relatorio color="bg-amber-400"/>
-            </div>
           </div>
+          <div>
+            <div className='inline-flex'>
+            <Consulta color="bg-purple-400"/>
+            <Relatorio color="bg-purple-400"/>
+          </div>
+
+        </div>
+        </div>
+        </div>
         </div>
 
         
-      </div>
 
 
 
-    </div>
+   
   )
 }
