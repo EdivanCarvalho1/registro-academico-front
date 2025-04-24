@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "typeRoots": ["./types", "./node_modules/@types"],
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ],
     "lib": [
       "dom",
       "dom.iterable",
@@ -22,7 +25,8 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "strictNullChecks": true
   },
   "include": [
     "next-env.d.ts",
