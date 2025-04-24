@@ -1,5 +1,4 @@
 "use client"
-import Form from 'react-bootstrap/Form';
 import Input from './input/input';
 import Select from './input/select';
 
@@ -8,7 +7,7 @@ export default function DadosPessoais(){
         <div className="pl-5">
             <h2 className="fs-5">1. Dados Pessoais</h2>
 
-            <div className='d-flex p-3' style={{height: '600px', width: '100%'}}>
+            <div className='d-flex p-3 mb-4' style={{width: '100%'}}>
 
                 <div className='h-100 w-50'>
 
