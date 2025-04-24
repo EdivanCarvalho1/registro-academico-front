@@ -4,9 +4,9 @@ import Consulta from './components/consulta'
 import Relatorio from './components/relatorio'
 export default function Home(){
   return (
-    <div > 
+    <div> 
       <Header/>
-      <div>
+      <div className='w-full h-screen'>
         <div className='flex justify-center items-center'>
           <h1>Registro Escolar</h1>
         </div>

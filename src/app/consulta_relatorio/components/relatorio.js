@@ -4,7 +4,7 @@ export default function Relatorio(){
   return (
     <div className='border rounded-2xl bg-slate-50 '>
     <header className='bg-amber-400 rounded-2xl p-5 '>
-    consulta
+    Relatorio
 
     </header>
     <div className='flex flex-column text-black p-2 items-start justify-items-start'>
