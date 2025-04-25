@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../matricula/components/header/header'
 import Consulta from './components/consulta'
 import Relatorio from './components/relatorio'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -10,7 +11,13 @@ export default function Home() {
         <Header />
         <div className="w-full">
           <div className="flex justify-center items-center mt-10">
-            <h1 className="text-2xl text-black font-bold">Registro Escolar</h1>
+              <Image src="/icons8-voltar-32.png"
+              width={30}
+              height={30}
+              alt="voltar"
+              />
+            <h1 className="text-2xl text-black font-bold">
+              Registro Escolar</h1>
           </div>
           <div className="flex flex-col m-7 justify-center items-center">
             <div className="inline-flex">
