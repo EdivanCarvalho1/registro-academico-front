@@ -1,6 +1,6 @@
 'use client'
 import Input from "./components/TextInput";
-import SelectInput from "./components/SelectInpurt";
+import SelectInput from "./components/SelectInput";
 import Table from "./components/Table";
 import { lista_cursos, lista_usuarios } from "./data";
 import React from "react";
