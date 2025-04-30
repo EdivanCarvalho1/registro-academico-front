@@ -6,7 +6,7 @@ export default function Relatorio({color}){
       <header className={`rounded-sm ${color} p-2`}>
         Relatorio
         </header>
-      <div className="flex flex-column text-black justify-items-start ">
+      <div className="flex flex-col text-black justify-items-start ">
         <a href='#' className='bg-gray-200 w-full rounded-sm text-black text-decoration-none p-2 hover:font-bold'>Requerimentos</a>
         <a href='#' className='bg-gray-200 w-full rounded-sm text-black text-decoration-none p-2 hover:font-bold'>Listagem</a>
         <a href='#' className='bg-gray-200 w-full rounded-sm text-black text-decoration-none p-2  hover:font-bold'>Boletim</a>

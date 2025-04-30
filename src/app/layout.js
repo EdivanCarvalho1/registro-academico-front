@@ -1,5 +1,4 @@
 import "./globals.css";
-import BootstrapClient from "./matricula/components/bootstrap/BootstrapClient";
 
 export const metadata = {
   title: "Registro Acadêmico",
@@ -9,10 +8,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-      >
+      <body>
         {children}
-        <BootstrapClient />
       </body>
     </html>
   );

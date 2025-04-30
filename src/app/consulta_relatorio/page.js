@@ -6,9 +6,9 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#493159] flex justify-center">
-      <div className="bg-white w-full max-w-screen-xl">
-        <Header />
+    <div className="">
+      <div className="bg-white w-full ">
+      <Header />
         <div className="w-full">
         <div className="flex mt-14 mb-2 ml-56">
     <div className="flex items-center "> 
