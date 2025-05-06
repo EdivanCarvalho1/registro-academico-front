@@ -14,10 +14,10 @@ export default function Matricula() {
         
       <Header />
 
-      <div className="px-5 py-3 bg-white text-black">
+      <div className="px-5 py-3 bg-white text-[#493159]">
         <div className="flex items-center mb-4" style={{ height: "70px" }}>
           <CiCircleChevLeft className="h-9 w-9 pb-2" />
-          <h1 className="text-3xl uppercase ml-4">Matrícula de novo aluno</h1>
+          <h1 className="text-3xl uppercase ml-4 font-bold">Matrícula de novo aluno</h1>
         </div>
 
         <form>
