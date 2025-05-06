@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Acadêmica</title>
+    <link rel="stylesheet" href="/src/app/calendario/assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">LOGO<br>ACAD</div>
+        <div class="navbar-right">
+            <ul class="navbar-menu">
+                <li><a href="#">Registro Escolar</a></li>
+                <li><a href="#">Horário</a></li>
+                <li><a href="#">Ensino</a></li>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#">Configuração</a></li>
+            </ul>
+            <div class="navbar-profile">
+                <img src="/src/app/calendario/assets/imgs_icons/account_circle_24dp_CBB3F9_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="Perfil">
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <!-- Coluna esquerda: Calendário -->
+        <div class="left">
+            <div class="toggle-buttons">
+                <button class="btn active">MÊS</button>
+                <button class="btn">ANO</button>
+            </div>
+            <div class="calendar">
+                <div class="calendar-header">
+                    <h2 id="month-year"></h2>
+                </div>
+                <div id="calendar" class="calendar-grid"></div>
+            </div>
+
+            <div class="events">
+                <h3>EVENTOS</h3>
+                <p><span class="pink">Dia 16~18</span> Evento da Semana do Saber Fazer Saber</p>
+                <p><span class="gray">Dia 21~26</span></p>
+            </div>
+        </div>
+
+        <!-- Coluna direita: Tarefas -->
+        <div class="right">
+            <h3><span class="highlight">HOJE</span> 07 Abril</h3>
+            <div class="task-table">
+                <div class="task-header">
+                    <span>Tarefas</span>
+                    <span>Atribuído</span>
+                    <span>Status</span>
+                </div>
+                <div class="task-row">
+                    <input type="checkbox">
+                    <a href="#">Matrícula de Aluno Ciclano</a>
+                    <img src="/src/app/calendario/assets/imgs_icons/account_circle_24dp_CBB3F9_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt="Pessoa">
+                    <span class="status pending">Pendente</span>
+                </div>
+                <div class="task-row">
+                    <input type="checkbox" checked>
+                    <a href="#">Matrícula de Aluno Ciclano</a>
+                    <img src="/src/app/calendario/assets/imgs_icons/account_circle_24dp_CBB3F9_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt="Pessoa">
+                    <span class="status done">Entregue</span>
+                </div>
+                <!-- Repita conforme necessário -->
+            </div>
+        </div>
+    </div>
+    <script src="/src/app/calendario/assets/js/script.js"></script>
+</body>
+
+</html>
