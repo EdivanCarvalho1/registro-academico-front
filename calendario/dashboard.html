@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrículas de Aluno</title>
+    <link rel="stylesheet" href="/src/app/calendario/assets/style_dashboard.css">
+</head>
+
+<body>
+    <div class="chart-container">
+        <div class="chart-header">
+            <div>
+                <p class="subtitle">Estatísticas</p>
+                <h3>Matrículas de Aluno</h3>
+            </div>
+            <select>
+                <option>Por período</option>
+            </select>
+        </div>
+
+        <div class="legend">
+            <span><span class="dot ativos"></span>Ativos</span>
+            <span><span class="dot ingressando"></span>Ingressando</span>
+            <span><span class="dot formando"></span>Formando</span>
+            <span><span class="dot trancados"></span>Trancados</span>
+        </div>
+
+        <div class="chart" id="bar-chart"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
