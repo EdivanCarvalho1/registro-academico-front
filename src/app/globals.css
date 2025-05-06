@@ -1,30 +1,48 @@
 @import "tailwindcss";
-@import 'bootstrap/dist/css/bootstrap.min.css';
 
+/* Fonte customizada */
 @font-face {
   font-family: 'sans abitare';
-  src: url('/fonts/Sans.ttf') format('ttf');
+  src: url('/fonts/Sans.ttf') format('truetype');
 }
-*{
+
+/* Aplicando a fonte personalizada globalmente */
+* {
   font-family: 'sans abitare', sans-serif;
 }
 
-.button{
-  padding: 4px 16px;
-  border-radius: 15px;
-  color: white;
-  margin-left: 15px;
-  text-decoration: none;
+/* Estilo global para inputs, selects, textareas */
+input, select, textarea {
+  @apply bg-white border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-purple-500 focus:outline-none;
 }
 
-.bg-white{
-  background-color: white;
+/* Adicionando foco para os campos de entrada */
+input:focus, select:focus, textarea:focus {
+  @apply border-purple-500;
 }
 
-.text-black{
-  color: black;
+/* Estilo para checkbox */
+input[type="checkbox"] {
+  @apply w-4 h-4 border-gray-300 rounded-md bg-white checked:bg-purple-600 focus:ring-purple-500;
 }
 
+/* Estilo para botão */
+.button {
+  @apply px-4 py-2 rounded-full text-white bg-purple-600 hover:bg-purple-700;
+}
+
+/* Estilo de labels */
+label {
+  @apply text-sm font-medium text-gray-700;
+}
+
+/* Garantindo a compatibilidade com form controls */
 .form-control {
-  background-color: white;
+  @apply bg-white border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-purple-500;
 }
+
+/* Estilo para campos desabilitados */
+input:disabled, select:disabled, textarea:disabled {
+  @apply bg-gray-200 cursor-not-allowed;
+}
+

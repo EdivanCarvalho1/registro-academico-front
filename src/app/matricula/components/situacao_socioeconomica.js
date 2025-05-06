@@ -1,101 +1,111 @@
-"use client"
-import { Form } from 'react-bootstrap';
+"use client";
 import Input from './input/input';
 import Select from './input/select';
 import SelectUfBr from './input/select_ufbr';
 
-export default function SituacaoSocioeconomica(){
-    return(
-        <div className="pl-5">
+export default function SituacaoSocioeconomica() {
+  return (
+    <div className="pl-5">
+      <h2 className="text-base font-semibold">6. Situação Socioeconômica</h2>
 
-            <h2 className="fs-5">6. Situaçao Socioeconomica</h2>
-
-            <div className='d-flex p-3 flex-column mb-4' style={{width: '100%'}}>
-                <div className='d-flex' style={{width: '100%'}}>
-                    <div style={{width: "30%"}}>
-                        <Input 
-                            id="renda"
-                            type="text"
-                            label="Renda Per Capta"
-                            placeholder="XX salários mínimos"
-                        />
-                    </div>
-                    <div style={{width: "40%"}}>
-                        <Input 
-                            id="profissao"
-                            type="text"
-                            label="Profissao do Aluno"
-                        />
-                    </div>
-                    <div style={{width: "30%"}}>
-                        <Input 
-                            id="familiares"
-                            type="number"
-                            label="Familiares Morando Junto"
-                            placeholder="00"
-                        />
-                    </div>
-                    {/* Tirei o campo de etnia pois ele já está presente na primeira parte do formulário */}
-                </div>
-
-                <div className='d-flex justify-content-between pr-4 mb-3' style={{width: '100%'}}>
-                    <Form.Check
-                        type="switch"
-                        id="cuntr-renda"
-                        label="Contribui para a renda familiar?"
-                        reverse
-                    />
-                    <Form.Check
-                        type="switch"
-                        id="filhos"
-                        label="Possui filhos?"
-                        reverse
-                    />
-                </div>
-
-                <div className='d-flex justify-content-between pr-4 mb-3' style={{width: '100%'}}>
-                    <Form.Check
-                        type="switch"
-                        id="desp_hosp"
-                        label="Possui despezas hospitalares?"
-                        reverse
-                    />
-                    <Form.Check
-                        type="switch"
-                        id="desp_transp"
-                        label="Possui despezas com transporte?"
-                        reverse
-                    />
-                </div>
-
-                <div className='d-flex' style={{width: '100%'}}>
-                    <div style={{width: "35%"}}>
-                        <Input 
-                            id="forma_ingresso"
-                            type="text"
-                            label="Forma de Ingresso"
-                            placeholder="XXXX-XXXX-XXXX0"
-                        />
-                    </div>
-                    <div style={{width: "35%"}}>
-                        <Input 
-                            id="ens_med"
-                            type="text"
-                            label="Onde Cursou o Ensino Médio"
-                            placeholder="Nome da Escola"
-                        />
-                    </div>
-                    <div style={{width: "30%"}}>
-                        <Input 
-                            id="concl_end_med"
-                            type="number"
-                            label="Ano de Conclusao"
-                            placeholder="0000"
-                        />
-                    </div>
-                </div>
-            </div>
-        
+      <div className="flex flex-col p-3 mb-4 w-full gap-4">
+        <div className="flex w-full gap-4">
+          <div className="w-[30%]">
+            <Input
+              id="renda"
+              type="text"
+              label="Renda Per Capta"
+              placeholder="XX salários mínimos"
+            />
+          </div>
+          <div className="w-[40%]">
+            <Input
+              id="profissao"
+              type="text"
+              label="Profissão do Aluno"
+            />
+          </div>
+          <div className="w-[30%]">
+            <Input
+              id="familiares"
+              type="number"
+              label="Familiares Morando Junto"
+              placeholder="00"
+            />
+          </div>
         </div>
-    )
+
+        <div className="flex justify-between pr-4 mb-3 w-full">
+          <label className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              id="cuntr-renda"
+              className="peer sr-only"
+            />
+            <div className="w-11 h-6 bg-gray-300 rounded-full peer-checked:bg-purple-500 transition peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-transform relative" />
+            <span>Contribui para a renda familiar?</span>
+          </label>
+
+          <label className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              id="filhos"
+              className="peer sr-only"
+            />
+            <div className="w-11 h-6 bg-gray-300 rounded-full peer-checked:bg-purple-500 transition peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-transform relative" />
+            <span>Possui filhos?</span>
+          </label>
+        </div>
+
+        <div className="flex justify-between pr-4 mb-3 w-full">
+          <label className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              id="desp_hosp"
+              className="peer sr-only"
+            />
+            <div className="w-11 h-6 bg-gray-300 rounded-full peer-checked:bg-purple-500 transition peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-transform relative" />
+            <span>Possui despesas hospitalares?</span>
+          </label>
+
+          <label className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              id="desp_transp"
+              className="peer sr-only"
+            />
+            <div className="w-11 h-6 bg-gray-300 rounded-full peer-checked:bg-purple-500 transition peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-transform relative" />
+            <span>Possui despesas com transporte?</span>
+          </label>
+        </div>
+
+        <div className="flex w-full gap-4">
+          <div className="w-[35%]">
+            <Input
+              id="forma_ingresso"
+              type="text"
+              label="Forma de Ingresso"
+              placeholder="XXXX-XXXX-XXXX0"
+            />
+          </div>
+          <div className="w-[35%]">
+            <Input
+              id="ens_med"
+              type="text"
+              label="Onde Cursou o Ensino Médio"
+              placeholder="Nome da Escola"
+            />
+          </div>
+          <div className="w-[30%]">
+            <Input
+              id="concl_end_med"
+              type="number"
+              label="Ano de Conclusão"
+              placeholder="0000"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }

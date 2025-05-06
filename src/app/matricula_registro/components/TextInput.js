@@ -21,14 +21,14 @@ export default function TextInput({
   };
 
   return (
-    <div>
+    <div style={{ margin }}>
       <input
         type="text"
-        id="input"
         placeholder={placeholder}
-        style={styles.TextInput}
         onChange={onChange}
         value={value}
+        className="border border-gray-300 rounded px-2 py-1 text-base"
+        style={{ width }}
       />
     </div>
   );
