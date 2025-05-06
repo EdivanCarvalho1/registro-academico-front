@@ -2,6 +2,7 @@
 
 import { FaSchool, FaUserCircle, FaAngleDown } from "react-icons/fa";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Header() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -9,7 +10,6 @@ export default function Header() {
   const toggleDropdown = (name) => {
     setOpenDropdown(openDropdown === name ? null : name);
   };
-
   const menuItems = [
     "Registro Escolar",
     "Horário",
@@ -19,10 +19,17 @@ export default function Header() {
   ];
 
   return (
-    <header className="h-[100px] bg-white text-black flex border-b border-gray-600">
+    <header className="h-[4rem] bg-white text-black flex border-b border-gray-600">
       {/* Logo */}
       <div className="w-[10%] h-full flex items-center justify-center">
-        <FaSchool className="w-1/2 h-1/2" />
+        <a href="./login">
+            <Image
+            alt="school icon"
+            src="/school-icon.svg"
+            width={60}
+            height={60}
+            />
+        </a>
       </div>
 
       {/* Navegação */}

@@ -1,6 +1,7 @@
 import React from 'react'
 
 
+
 export default function Consulta({ color }){
   return (
     <div className=' rounded-lg bg-slate-50 ml-2 mr-12 w-72 h-full '>
