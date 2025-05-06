@@ -1,0 +1,52 @@
+.matricula_header{
+    height: 100px;
+    background-color: white;
+    color: black;
+    display: flex;
+    border-bottom: 1px solid #666;
+}
+
+.logo_container{
+    width: 10%;
+    height: 100%;
+}
+
+.logo{
+    height: 50%;
+    width: 50%;
+}
+
+.nav{
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.perfil_container{
+    width: 10%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil_borda{
+    border: 1.85px solid black;
+    border-radius: 10px;
+
+    height: 55%;
+    width: 55%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil{
+    height: 80%;
+    width: 70%;
+}
