@@ -7,7 +7,7 @@ export default function Consulta({ color }){
         Consultas
       </header>
       <div className='flex flex-col text-black justify-items-start '>
-        <a href='#' className='bg-gray-200 w-full rounded-sm text-black text-decoration-none p-2 hover:font-bold '>Requerimentos</a>
+        <a href='/requerimento' className='bg-gray-200 w-full rounded-sm text-black text-decoration-none p-2 hover:font-bold '>Requerimentos</a>
         <a href='#' className='bg-gray-200 w-full rounded-sm text-black text-decoration-none p-2 hover:font-bold'>Listagem</a>
         <a href='#' className='bg-gray-200 w-full rounded-sm text-black text-decoration-none p-2 hover:font-bold'>Boletim</a>
         <a href='#' className='bg-gray-200 w-full rounded-sm text-black text-decoration-none p-2 hover:font-bold'>Diario</a>
