@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export default function LoginPage() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-white">
@@ -37,17 +37,16 @@ export default function LoginPage() {
               <button
                 type="submit"
                 className="bg-[#65558f] hover:bg-[#69537a] text-white py-3 rounded-full font-semibold mt-9 w-1/2 self-center"
-              ><a href="/">Entrar</a>
+              ><Link to="/">Entrar</Link>
               </button>
             </form>
             <div className="text-center mt-6">
-              <a href="#" className="text-sm text-white underline">
+              <Link to="#" className="text-sm text-white underline">
                 Esqueceu a sua senha?
-              </a>
+              </Link>
             </div>
           </div>
         </div>
-
       </div>
     </div>
 
