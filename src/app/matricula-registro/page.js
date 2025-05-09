@@ -53,7 +53,7 @@ export default function MatriculaRegistro() {
           />
         </div>
 
-        <Link to="/matricula">
+        <Link href="/matricula">
           <Table usuarios={lista_usuarios}
           />
         </Link>

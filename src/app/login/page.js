@@ -37,11 +37,11 @@ export default function LoginPage() {
               <button
                 type="submit"
                 className="bg-[#65558f] hover:bg-[#69537a] text-white py-3 rounded-full font-semibold mt-9 w-1/2 self-center"
-              ><Link to="/">Entrar</Link>
+              ><Link href="/">Entrar</Link>
               </button>
             </form>
             <div className="text-center mt-6">
-              <Link to="#" className="text-sm text-white underline">
+              <Link href="#" className="text-sm text-white underline">
                 Esqueceu a sua senha?
               </Link>
             </div>

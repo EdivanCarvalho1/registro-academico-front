@@ -6,7 +6,7 @@ import Endereco from "./components/endereco";
 import DadosAcademicos from "./components/dados_academicos";
 import InformacoesEspecificas from "./components/informacoes_especificas";
 import SituacaoSocioeconomica from "./components/situacao_socioeconomica";
-import DocumentosEnviados from "./components/documentos._enviados";
+import DocumentosEnviados from "./components/documentos_enviados";
 import Link from "next/link";
 
 export default function Matricula() {
@@ -33,9 +33,9 @@ export default function Matricula() {
           <DocumentosEnviados />
 
           <div className="flex justify-end items-center w-full h-[100px] gap-4 mt-4">
-            <Link to="#" className="bg-[#b697e8] text-white py-2 px-4 rounded-md hover:bg-[#9a7dbf]">Editar</Link>
-            <Link to="#" className="bg-[#f9cf64] text-white py-2 px-4 rounded-md hover:bg-[#e1b64d]">Solicitar Alteração de Documento</Link>
-            <Link to="#" className=" bg-[#afc272] rounded-md  text-white py-2 px-4 " type="submit" value="Confirmar">Confirmar</Link>
+            <Link href="#" className="bg-[#b697e8] text-white py-2 px-4 rounded-md hover:bg-[#9a7dbf]">Editar</Link>
+            <Link href="#" className="bg-[#f9cf64] text-white py-2 px-4 rounded-md hover:bg-[#e1b64d]">Solicitar Alteração de Documento</Link>
+            <Link href="#" className=" bg-[#afc272] rounded-md  text-white py-2 px-4 " type="submit" value="Confirmar">Confirmar</Link>
           </div>
         </form>
       </div>
