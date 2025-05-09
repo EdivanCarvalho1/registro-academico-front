@@ -4,7 +4,7 @@ import SelectInput from "./components/SelectInput";
 import Table from "./components/Table";
 import { lista_cursos, lista_usuarios } from "./data";
 import React from "react";
-
+import { CiCircleChevLeft } from "react-icons/ci";
 import "./style.css";
 import Header from "../matricula/components/header/header";
 
@@ -17,7 +17,14 @@ export default function MatriculaRegistro() {
       <div>
         <Header/>
             <div className="matricula-registro-container">
-        <h1>MATRICULA DE NOVO ALUNO</h1>
+        <div className="flex items-center gap-2 mb-4">
+          <a href="/consulta-relatorio">
+            <CiCircleChevLeft className="h-9 w-9 pb-2" />
+          </a>
+          <h1 className="font-bold pb-2 text-2xl">
+            MATRICULA DE NOVO ALUNO
+            </h1>
+        </div>
         <div className="inputs">
           <SelectInput
             options={[
@@ -45,7 +52,11 @@ export default function MatriculaRegistro() {
             defaultValue={"Cursos"}
           />
         </div>
-        <Table usuarios={lista_usuarios} />
+        
+        <a href="/matricula">
+          <Table usuarios={lista_usuarios}
+          />
+        </a>
             </div>
       </div>
   );

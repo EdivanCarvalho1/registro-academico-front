@@ -37,14 +37,14 @@ export default function Header() {
       <nav className="w-[80%] h-full flex justify-end items-center gap-4 relative">
         {menuItems.map((item, index) => (
           <div className="relative" key={index}>
-            <a href='/consulta-relatorio'>
               <button
                 onClick={() => toggleDropdown(item)}
                 className="px-4 py-2 text-sm font-medium  text-[#493159] rounded  "
               > <span className="p-1">▼</span>
+            <a href='/consulta-relatorio'>
                 {item}
-              </button>
             </a>
+              </button>
 
           </div>
         ))}

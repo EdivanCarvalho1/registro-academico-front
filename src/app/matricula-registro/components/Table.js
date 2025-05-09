@@ -1,6 +1,7 @@
 export default function Table({ usuarios }) {
   return (
     <table className="table">
+
       <thead>
         <tr>
           <th>CPF</th>
@@ -20,6 +21,7 @@ export default function Table({ usuarios }) {
             <td className={user.status.toLowerCase()}>{user.status}</td>
           </tr>
         ))}
+      
       </tbody>
     </table>
   );
